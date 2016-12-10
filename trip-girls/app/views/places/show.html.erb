@@ -1,0 +1,18 @@
+<div class="container marketing">
+   
+ 	<div class="row featurette">
+ 		<div class="col-md-7"> 
+ 			<h2 class="featurette-heading"><%=@place.name %></h2>
+ 			<p class ="lead"><%= @place.description %></p>
+ 		</div>
+ 		<div class="col-md-5">
+ <%= image_tag(@place.picture_url, class: "featurette-Image img-responsive center-block", width: 600)%>
+
+ 			</div>
+ 		</div>
+
+<hr class="featurette-divider">
+
+<%= link_to "Edit", edit_place_path(@place), class: "btn btn-default", role: "button" %>
+<%= link_to "Back", place_path, class: "btn btn-default", role: "button" %>
+</div>
